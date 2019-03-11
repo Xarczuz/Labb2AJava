@@ -28,7 +28,6 @@ public class CreateData {
 		carsList.add(new Cars("Jaguar", "CX-5", "Röd", "Finns i Lager", 78000, 264900));
 		carsList.add(new Cars("Ford", "CX-5", "Röd", "Finns i Lager", 78000, 264900));
 		carsList.add(new Cars("Chevrolet", "CX-5", "Röd", "Finns i Lager", 78000, 264900));
-		
 
 		ArrayList<Seller> sellerList = new ArrayList<Seller>();
 		// antal säljare 8
@@ -41,9 +40,23 @@ public class CreateData {
 		sellerList.add(new Seller("Jessica Lund", "076-775682", "Sundlandvägen 21", "Tesla sold", "online"));
 		sellerList.add(new Seller("Johanna Van", "070-355432", "Kroneberg 42", "BMW sold", "offline"));
 		sellerList.add(new Seller("Peter Li", "070-353632", "Sveavägen 88", "Nissan sold", "online"));
+
+		ArrayList<String> soldCarsList = new ArrayList<String>();
+		// koppla säljare till såld bil
+
+		for (Cars c : carsList) {
+			//Math.floor(Math.random() * 2);
+			
+			if(Math.floor(Math.random() * 2) == 1) {
+				Math.floor(Math.random() * sellerList.size());
+				sellerList.get((int) Math.floor(Math.random() * sellerList.size()));
+				c.setStatus("Såld");
+				String s = (c.carUID + ", " + sellerList.get((int) Math.floor(Math.random() * sellerList.size())).getSellerID());
+				soldCarsList.add(s);
+			}
+			
+			System.out.println(Math.floor(Math.random() * 2));
+		}
 	}
-	
-	ArrayList<String> soldCarsList = new ArrayList<String>();
-	
 
 }

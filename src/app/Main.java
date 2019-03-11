@@ -9,6 +9,8 @@ public class Main {
 		// Meny anrop
 		Meny tmpMeny = new Meny();
 		tmpMeny.menuChoise();
+		
+		
 	}
 
 }
