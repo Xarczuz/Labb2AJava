@@ -29,20 +29,6 @@ public class Meny {
 				
 			} else if (val == 2) {
 				
-			} else if (val == 3) {
-				
-
-			} else if (val == 4) {
-				
-			} else if (val == 5) {
-			
-
-			} else if (val == 6) {
-				
-			} else if (val == 7) {
-			
-			} else if (val == 8) {
-			
 			} else if (val == 9) {
 			
 			} else {
