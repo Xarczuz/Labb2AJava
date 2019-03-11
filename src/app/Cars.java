@@ -15,6 +15,12 @@ public class Cars {
 		this.purchasePrice = purchasePrice;
 		this.sellPrice = sellPrice;
 	}
+	
+	@Override
+	public String toString() {
+		return "Cars [carUID=" + carUID + ", brand=" + brand + ", name=" + name + ", modell=" + modell + ", color="
+				+ color + ", status=" + status + ", purchasePrice=" + purchasePrice + ", sellPrice=" + sellPrice + "]";
+	}
 	public String getBrand() {
 		return brand;
 	}
