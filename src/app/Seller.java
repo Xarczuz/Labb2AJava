@@ -11,57 +11,35 @@ public class Seller {
 	String sellerID = UUID.randomUUID().toString();
 
 	/**
-	 * @param namn
-	 * @param information
-	 * @param tel
-	 * @param status
-	 * @param vinst
-	 * @param saljande
+	 * @param sellerName
+	 * @param sellerPhone
+	 * @param sellerAdress
+	 * @param sellerInformation
+	 * @param sellerStatus
+	 * @param sellerImportPurchase
+	 * @param sellerSoldPrice
+	 * @param sellerStoreAmount
+	 * @param sellerProfit
+	 * @param sellerSoldAmounnt
 	 * @param provision
-	 * @param antal_affar
-	 * @param id
-	 * 
+	 * @param sellerID
 	 */
-	public Seller(String namn, String information, String tel, String status, int vinst, int saljande, float provision,
-			int antal_affar) {
-
-		this.sellerName = namn;
-		this.sellerInformation = information;
-		this.sellerPhone = tel;
-		this.sellerStatus = status;
-		this.sellerProfit = vinst;
-		this.sellerSoldPrice = saljande;
+	public Seller(String sellerName, String sellerPhone, String sellerAdress, String sellerInformation,
+			String sellerStatus, int sellerImportPurchase, int sellerSoldPrice, int sellerStoreAmount, int sellerProfit,
+			int sellerSoldAmounnt, float provision, String sellerID) {
+		super();
+		this.sellerName = sellerName;
+		this.sellerPhone = sellerPhone;
+		this.sellerAdress = sellerAdress;
+		this.sellerInformation = sellerInformation;
+		this.sellerStatus = sellerStatus;
+		this.sellerImportPurchase = sellerImportPurchase;
+		this.sellerSoldPrice = sellerSoldPrice;
+		this.sellerStoreAmount = sellerStoreAmount;
+		this.sellerProfit = sellerProfit;
+		this.sellerSoldAmounnt = sellerSoldAmounnt;
 		this.provision = provision;
-		this.sellerStoreAmount = antal_affar;
-
-	}
-
-	/**
-	 * @return the antal_affar
-	 */
-	public int getAntal_affar() {
-		return sellerStoreAmount;
-	}
-
-	/**
-	 * @return the id
-	 */
-	public String getId() {
-		return sellerID;
-	}
-
-	/**
-	 * @return the information
-	 */
-	public String getInformation() {
-		return sellerInformation;
-	}
-
-	/**
-	 * @return the namn
-	 */
-	public String getNamn() {
-		return sellerName;
+		this.sellerID = sellerID;
 	}
 
 	/**
@@ -72,59 +50,80 @@ public class Seller {
 	}
 
 	/**
-	 * @return the saljande
+	 * @return the sellerAdress
 	 */
-	public int getSaljande() {
-		return sellerSoldPrice;
+	public String getSellerAdress() {
+		return sellerAdress;
 	}
 
 	/**
-	 * @return the status
+	 * @return the sellerID
 	 */
-	public String getStatus() {
-		return sellerStatus;
+	public String getSellerID() {
+		return sellerID;
 	}
 
 	/**
-	 * @return the tel
+	 * @return the sellerImportPurchase
 	 */
-	public String getTel() {
+	public int getSellerImportPurchase() {
+		return sellerImportPurchase;
+	}
+
+	/**
+	 * @return the sellerInformation
+	 */
+	public String getSellerInformation() {
+		return sellerInformation;
+	}
+
+	/**
+	 * @return the sellerName
+	 */
+	public String getSellerName() {
+		return sellerName;
+	}
+
+	/**
+	 * @return the sellerPhone
+	 */
+	public String getSellerPhone() {
 		return sellerPhone;
 	}
 
 	/**
-	 * @return the vinst
+	 * @return the sellerProfit
 	 */
-	public int getVinst() {
+	public int getSellerProfit() {
 		return sellerProfit;
 	}
 
 	/**
-	 * @param antal_affar the antal_affar to set
+	 * @return the sellerSoldAmounnt
 	 */
-	public void setAntal_affar(int antal_affar) {
-		this.sellerStoreAmount = antal_affar;
+	public int getSellerSoldAmounnt() {
+		return sellerSoldAmounnt;
 	}
 
 	/**
-	 * @param id the id to set
+	 * @return the sellerSoldPrice
 	 */
-	public void setId(String id) {
-		this.sellerID = id;
+	public int getSellerSoldPrice() {
+		return sellerSoldPrice;
 	}
 
 	/**
-	 * @param information the information to set
+	 * @return the sellerStatus
 	 */
-	public void setInformation(String information) {
-		this.sellerInformation = information;
+	public String getSellerStatus() {
+		return sellerStatus;
 	}
 
 	/**
-	 * @param namn the namn to set
+	 * @return the sellerStoreAmount
 	 */
-	public void setNamn(String namn) {
-		this.sellerName = namn;
+	public int getSellerStoreAmount() {
+		return sellerStoreAmount;
 	}
 
 	/**
@@ -135,31 +134,80 @@ public class Seller {
 	}
 
 	/**
-	 * @param saljande the saljande to set
+	 * @param sellerAdress the sellerAdress to set
 	 */
-	public void setSaljande(int saljande) {
-		this.sellerSoldPrice = saljande;
+	public void setSellerAdress(String sellerAdress) {
+		this.sellerAdress = sellerAdress;
 	}
 
 	/**
-	 * @param status the status to set
+	 * @param sellerID the sellerID to set
 	 */
-	public void setStatus(String status) {
-		this.sellerStatus = status;
+	public void setSellerID(String sellerID) {
+		this.sellerID = sellerID;
 	}
 
 	/**
-	 * @param tel the tel to set
+	 * @param sellerImportPurchase the sellerImportPurchase to set
 	 */
-	public void setTel(String tel) {
-		this.sellerPhone = tel;
+	public void setSellerImportPurchase(int sellerImportPurchase) {
+		this.sellerImportPurchase = sellerImportPurchase;
 	}
 
 	/**
-	 * @param vinst the vinst to set
+	 * @param sellerInformation the sellerInformation to set
 	 */
-	public void setVinst(int vinst) {
-		this.sellerProfit = vinst;
+	public void setSellerInformation(String sellerInformation) {
+		this.sellerInformation = sellerInformation;
+	}
+
+	/**
+	 * @param sellerName the sellerName to set
+	 */
+	public void setSellerName(String sellerName) {
+		this.sellerName = sellerName;
+	}
+
+	/**
+	 * @param sellerPhone the sellerPhone to set
+	 */
+	public void setSellerPhone(String sellerPhone) {
+		this.sellerPhone = sellerPhone;
+	}
+
+	/**
+	 * @param sellerProfit the sellerProfit to set
+	 */
+	public void setSellerProfit(int sellerProfit) {
+		this.sellerProfit = sellerProfit;
+	}
+
+	/**
+	 * @param sellerSoldAmounnt the sellerSoldAmounnt to set
+	 */
+	public void setSellerSoldAmounnt(int sellerSoldAmounnt) {
+		this.sellerSoldAmounnt = sellerSoldAmounnt;
+	}
+
+	/**
+	 * @param sellerSoldPrice the sellerSoldPrice to set
+	 */
+	public void setSellerSoldPrice(int sellerSoldPrice) {
+		this.sellerSoldPrice = sellerSoldPrice;
+	}
+
+	/**
+	 * @param sellerStatus the sellerStatus to set
+	 */
+	public void setSellerStatus(String sellerStatus) {
+		this.sellerStatus = sellerStatus;
+	}
+
+	/**
+	 * @param sellerStoreAmount the sellerStoreAmount to set
+	 */
+	public void setSellerStoreAmount(int sellerStoreAmount) {
+		this.sellerStoreAmount = sellerStoreAmount;
 	}
 
 	/*
@@ -167,12 +215,13 @@ public class Seller {
 	 * 
 	 * @see java.lang.Object#toString()
 	 */
-
 	@Override
 	public String toString() {
-		return "Person [namn=" + sellerName + ", information=" + sellerInformation + ", tel=" + sellerPhone
-				+ ", status=" + sellerStatus + ", vinst=" + sellerProfit + ", saljande=" + sellerSoldPrice
-				+ ", provision=" + provision + ", antal_affar=" + sellerStoreAmount + ", id=" + sellerID + "]";
+		return "Seller [sellerName=" + sellerName + ", sellerPhone=" + sellerPhone + ", sellerAdress=" + sellerAdress
+				+ ", sellerInformation=" + sellerInformation + ", sellerStatus=" + sellerStatus
+				+ ", sellerImportPurchase=" + sellerImportPurchase + ", sellerSoldPrice=" + sellerSoldPrice
+				+ ", sellerStoreAmount=" + sellerStoreAmount + ", sellerProfit=" + sellerProfit + ", sellerSoldAmounnt="
+				+ sellerSoldAmounnt + ", provision=" + provision + ", sellerID=" + sellerID + "]";
 	}
 
 }
