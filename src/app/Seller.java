@@ -4,8 +4,9 @@ import java.util.UUID;
 
 public class Seller {
 
-	String sellerName, information, tel, status;
-	int antal_affar, vinst, saljande;
+	String sellerName, sellerPhone, sellerAdress, sellerInformation, sellerStatus;
+	int sellerImportPurchase, sellerSoldPrice;
+	int sellerStoreAmount, sellerProfit, sellerSoldAmounnt;
 	float provision;
 	String sellerID = UUID.randomUUID().toString();
 
@@ -24,14 +25,14 @@ public class Seller {
 	public Seller(String namn, String information, String tel, String status, int vinst, int saljande, float provision,
 			int antal_affar) {
 
-		this.namn = namn;
-		this.information = information;
-		this.tel = tel;
-		this.status = status;
-		this.vinst = vinst;
-		this.saljande = saljande;
+		this.sellerName = namn;
+		this.sellerInformation = information;
+		this.sellerPhone = tel;
+		this.sellerStatus = status;
+		this.sellerProfit = vinst;
+		this.sellerSoldPrice = saljande;
 		this.provision = provision;
-		this.antal_affar = antal_affar;
+		this.sellerStoreAmount = antal_affar;
 
 	}
 
@@ -39,28 +40,28 @@ public class Seller {
 	 * @return the antal_affar
 	 */
 	public int getAntal_affar() {
-		return antal_affar;
+		return sellerStoreAmount;
 	}
 
 	/**
 	 * @return the id
 	 */
 	public String getId() {
-		return id;
+		return sellerID;
 	}
 
 	/**
 	 * @return the information
 	 */
 	public String getInformation() {
-		return information;
+		return sellerInformation;
 	}
 
 	/**
 	 * @return the namn
 	 */
 	public String getNamn() {
-		return namn;
+		return sellerName;
 	}
 
 	/**
@@ -74,56 +75,56 @@ public class Seller {
 	 * @return the saljande
 	 */
 	public int getSaljande() {
-		return saljande;
+		return sellerSoldPrice;
 	}
 
 	/**
 	 * @return the status
 	 */
 	public String getStatus() {
-		return status;
+		return sellerStatus;
 	}
 
 	/**
 	 * @return the tel
 	 */
 	public String getTel() {
-		return tel;
+		return sellerPhone;
 	}
 
 	/**
 	 * @return the vinst
 	 */
 	public int getVinst() {
-		return vinst;
+		return sellerProfit;
 	}
 
 	/**
 	 * @param antal_affar the antal_affar to set
 	 */
 	public void setAntal_affar(int antal_affar) {
-		this.antal_affar = antal_affar;
+		this.sellerStoreAmount = antal_affar;
 	}
 
 	/**
 	 * @param id the id to set
 	 */
 	public void setId(String id) {
-		this.id = id;
+		this.sellerID = id;
 	}
 
 	/**
 	 * @param information the information to set
 	 */
 	public void setInformation(String information) {
-		this.information = information;
+		this.sellerInformation = information;
 	}
 
 	/**
 	 * @param namn the namn to set
 	 */
 	public void setNamn(String namn) {
-		this.namn = namn;
+		this.sellerName = namn;
 	}
 
 	/**
@@ -137,28 +138,28 @@ public class Seller {
 	 * @param saljande the saljande to set
 	 */
 	public void setSaljande(int saljande) {
-		this.saljande = saljande;
+		this.sellerSoldPrice = saljande;
 	}
 
 	/**
 	 * @param status the status to set
 	 */
 	public void setStatus(String status) {
-		this.status = status;
+		this.sellerStatus = status;
 	}
 
 	/**
 	 * @param tel the tel to set
 	 */
 	public void setTel(String tel) {
-		this.tel = tel;
+		this.sellerPhone = tel;
 	}
 
 	/**
 	 * @param vinst the vinst to set
 	 */
 	public void setVinst(int vinst) {
-		this.vinst = vinst;
+		this.sellerProfit = vinst;
 	}
 
 	/*
@@ -169,9 +170,9 @@ public class Seller {
 
 	@Override
 	public String toString() {
-		return "Person [namn=" + namn + ", information=" + information + ", tel=" + tel + ", status=" + status
-				+ ", vinst=" + vinst + ", saljande=" + saljande + ", provision=" + provision + ", antal_affar="
-				+ antal_affar + ", id=" + id + "]";
+		return "Person [namn=" + sellerName + ", information=" + sellerInformation + ", tel=" + sellerPhone
+				+ ", status=" + sellerStatus + ", vinst=" + sellerProfit + ", saljande=" + sellerSoldPrice
+				+ ", provision=" + provision + ", antal_affar=" + sellerStoreAmount + ", id=" + sellerID + "]";
 	}
 
 }
