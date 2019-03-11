@@ -15,7 +15,7 @@ public class Cars {
 		this.color = color;
 		this.status = status;
 		this.purchasePrice = purchasePrice;
-		this.sellPrice = sellPrice;
+		this.sellPrice = purchasePrice * 1.67;
 	}
 	
 	

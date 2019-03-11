@@ -1,6 +1,11 @@
-Car ID: fcdf4f1c-c298-4f27-a050-b8ea50505bea, Seller ID: 6b00683c-43d4-48f4-b903-d987f1f1c9f8
-Car ID: 3c5ac0a3-069b-4f7e-93cd-1e9bb4aa0c3a, Seller ID: 3d95e264-9d20-4ac6-96a2-bf901f241032
-Car ID: bb1d20e8-7931-4bab-ab07-d1f6ef12ebbb, Seller ID: 3d95e264-9d20-4ac6-96a2-bf901f241032
-Car ID: b7e339e3-eabe-47ab-8405-820310db5885, Seller ID: c09e5c7b-0519-4763-81aa-420e0c3d75ef
-Car ID: 431b7060-4f01-49da-8a9a-78f941d826d5, Seller ID: bd9d942c-72c9-4c55-99b5-fceb038fd063
-Car ID: 7a4fabfc-d980-4997-8ca0-32335b9652b0, Seller ID: 27a09e97-b672-4a28-a7e2-b99c45693125
+Car ID: ae6e1498-56c1-4b92-a101-06d86ce7004d, Seller ID: aa163ba5-da78-4bb7-b1d0-ef5e4718690d
+Car ID: 753b21e7-89d8-43dc-9b8e-a6344cf3b67e, Seller ID: dfca9f68-98f2-4e3d-90c5-8a7ca3457a07
+Car ID: 7a43a9c8-c2c5-4782-81f3-ad7e9e394a18, Seller ID: aa163ba5-da78-4bb7-b1d0-ef5e4718690d
+Car ID: 9e77ad84-4d82-4552-bf03-42845697514b, Seller ID: dfca9f68-98f2-4e3d-90c5-8a7ca3457a07
+Car ID: e3dcee28-d02c-484c-8fc0-405d3f67b4cd, Seller ID: 9ad61517-ea69-4ac6-8ec8-f3642c5cdc05
+Car ID: e1d708f8-8a23-49be-b7b8-2a94cf24aa8c, Seller ID: c92cb812-7ea8-4983-923e-0f4887637d65
+Car ID: 80a522d5-713b-48c0-a4fb-cb22ca4b58bf, Seller ID: dfca9f68-98f2-4e3d-90c5-8a7ca3457a07
+Car ID: 8de2313b-89ad-4bca-83ed-d70a448ec572, Seller ID: 87bbc0b1-30b3-40bf-a59a-57a52f791986
+Car ID: 0c3b0af2-ad59-4ebe-9d9a-a08847ebb74c, Seller ID: b2df99bc-44cc-4984-b16e-f4b169afdcaa
+Car ID: 4200aa8d-4789-423d-ade0-3019532d913a, Seller ID: 9ad61517-ea69-4ac6-8ec8-f3642c5cdc05
+Car ID: e8e0e7da-f785-4aac-b8eb-b7f20b04110d, Seller ID: 29b89932-2984-44cf-8402-a7218f9763a9

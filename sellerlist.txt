@@ -1,9 +1,9 @@
-sellerName=Kalle Li, sellerPhone=076-855632, sellerAdress=Sveavägen 23, sellerInformation=BMW sold, sellerStatus=online, sellerID=c09e5c7b-0519-4763-81aa-420e0c3d75ef
-sellerName=Björn Kar, sellerPhone=076-856222, sellerAdress=Brommavägen 5, sellerInformation=Toyota Supra Sold, sellerStatus=online, sellerID=bd9d942c-72c9-4c55-99b5-fceb038fd063
-sellerName=Vlad Li, sellerPhone=076-895663, sellerAdress=Årstigen 18, sellerInformation=Tesla Sold, sellerStatus=offline, sellerID=f8bc3d47-71c4-4140-aa54-86675a1acb59
-sellerName=Van  Mi, sellerPhone=076-66566632, sellerAdress=Öveavägen 73, sellerInformation=Volvo sold, sellerStatus=offline, sellerID=3d95e264-9d20-4ac6-96a2-bf901f241032
-sellerName=Lenart Young, sellerPhone=073-875637, sellerAdress=Svantevägen 21, sellerInformation=Saab sold, sellerStatus=offline, sellerID=154d649d-bb61-4a8e-9ade-1eee05487296
-sellerName=Jenny Davidson, sellerPhone=070-825322, sellerAdress=Fiskhamnen 43, sellerInformation=Mercedes sold, sellerStatus=online, sellerID=27a09e97-b672-4a28-a7e2-b99c45693125
-sellerName=Jessica Lund, sellerPhone=076-775682, sellerAdress=Sundlandvägen 21, sellerInformation=Tesla sold, sellerStatus=online, sellerID=29808c9b-967f-4ad9-81bf-55d9db616fd4
-sellerName=Johanna Van, sellerPhone=070-355432, sellerAdress=Kroneberg 42, sellerInformation=BMW sold, sellerStatus=offline, sellerID=99ed51a9-ab78-4cd1-aa76-78afd5e1fda9
-sellerName=Peter Li, sellerPhone=070-353632, sellerAdress=Sveavägen 88, sellerInformation=Nissan sold, sellerStatus=online, sellerID=6b00683c-43d4-48f4-b903-d987f1f1c9f8
+sellerName=Kalle Li, sellerPhone=076-855632, sellerAdress=Sveavägen 23, sellerInformation=BMW sold, sellerStatus=online, sellerID=aa163ba5-da78-4bb7-b1d0-ef5e4718690d
+sellerName=Björn Kar, sellerPhone=076-856222, sellerAdress=Brommavägen 5, sellerInformation=Toyota Supra Sold, sellerStatus=online, sellerID=c92cb812-7ea8-4983-923e-0f4887637d65
+sellerName=Vlad Li, sellerPhone=076-895663, sellerAdress=Årstigen 18, sellerInformation=Tesla Sold, sellerStatus=offline, sellerID=b7d3e22a-6ee2-4d3e-a445-2ed9f4f5c22d
+sellerName=Van  Mi, sellerPhone=076-66566632, sellerAdress=Öveavägen 73, sellerInformation=Volvo sold, sellerStatus=offline, sellerID=b2df99bc-44cc-4984-b16e-f4b169afdcaa
+sellerName=Lenart Young, sellerPhone=073-875637, sellerAdress=Svantevägen 21, sellerInformation=Saab sold, sellerStatus=offline, sellerID=ab5e0e6c-5aac-4d2e-b8ca-cced1b8ce233
+sellerName=Jenny Davidson, sellerPhone=070-825322, sellerAdress=Fiskhamnen 43, sellerInformation=Mercedes sold, sellerStatus=online, sellerID=87bbc0b1-30b3-40bf-a59a-57a52f791986
+sellerName=Jessica Lund, sellerPhone=076-775682, sellerAdress=Sundlandvägen 21, sellerInformation=Tesla sold, sellerStatus=online, sellerID=29b89932-2984-44cf-8402-a7218f9763a9
+sellerName=Johanna Van, sellerPhone=070-355432, sellerAdress=Kroneberg 42, sellerInformation=BMW sold, sellerStatus=offline, sellerID=9ad61517-ea69-4ac6-8ec8-f3642c5cdc05
+sellerName=Peter Li, sellerPhone=070-353632, sellerAdress=Sveavägen 88, sellerInformation=Nissan sold, sellerStatus=online, sellerID=dfca9f68-98f2-4e3d-90c5-8a7ca3457a07
