@@ -6,7 +6,32 @@ public class CreateData {
 
 	public void createSeller() {
 
+		ArrayList<Cars> carsList = new ArrayList<Cars>();
+		// brand, modell, color, status purchasePrice, sellPrice Bilar i lager
+		carsList.add(new Cars("Mazda", "CX-5", "Röd", "Finns i Lager", 78000, 264900));
+		carsList.add(new Cars("Mazda", "6", "Blå", "Finns i Lager", 67000, 270900));
+		carsList.add(new Cars("Mercedes", "CLA Coupé", "Vit", "Finns i Lager", 78000, 264900));
+		carsList.add(new Cars("Audi", "CX-5", "Röd", "Finns i Lager", 78000, 264900));
+		carsList.add(new Cars("BMW", "CX-5", "Röd", "Finns i Lager", 78000, 264900));
+		carsList.add(new Cars("Skoda", "CX-5", "Röd", "Finns i Lager", 78000, 264900));
+		carsList.add(new Cars("Tesla", "CX-5", "Röd", "Finns i Lager", 78000, 264900));
+		carsList.add(new Cars("Volvo", "CX-5", "Röd", "Finns i Lager", 78000, 264900));
+		carsList.add(new Cars("Toyota", "CX-5", "Röd", "Finns i Lager", 78000, 264900));
+		carsList.add(new Cars("Opel", "CX-5", "Röd", "Finns i Lager", 78000, 264900));
+		carsList.add(new Cars("Honda", "CX-5", "Röd", "Finns i Lager", 78000, 264900));
+		carsList.add(new Cars("Fiat", "CX-5", "Röd", "Finns i Lager", 78000, 264900));
+		carsList.add(new Cars("Renault", "CX-5", "Röd", "Finns i Lager", 78000, 264900));
+		carsList.add(new Cars("Aston Martin", "CX-5", "Röd", "Finns i Lager", 78000, 264900));
+		carsList.add(new Cars("Ferrari", "CX-5", "Röd", "Finns i Lager", 78000, 264900));
+		carsList.add(new Cars("Lamborgini", "CX-5", "Röd", "Finns i Lager", 78000, 264900));
+		carsList.add(new Cars("Rolls-Royce", "CX-5", "Röd", "Finns i Lager", 78000, 264900));
+		carsList.add(new Cars("Jaguar", "CX-5", "Röd", "Finns i Lager", 78000, 264900));
+		carsList.add(new Cars("Ford", "CX-5", "Röd", "Finns i Lager", 78000, 264900));
+		carsList.add(new Cars("Chevrolet", "CX-5", "Röd", "Finns i Lager", 78000, 264900));
+		
+
 		ArrayList<Seller> sellerList = new ArrayList<Seller>();
+		// antal säljare 8
 		sellerList.add(new Seller("Kalle Li", "076-855632", "Sveavägen 23", "BMW sold", "online"));
 		sellerList.add(new Seller("Björn Kar", "076-856222", "Brommavägen 5", "Toyota Supra Sold", "online"));
 		sellerList.add(new Seller("Vlad Li", "076-895663", "Årstigen 18", "Tesla Sold", "offline"));
@@ -17,5 +42,8 @@ public class CreateData {
 		sellerList.add(new Seller("Johanna Van", "070-355432", "Kroneberg 42", "BMW sold", "offline"));
 		sellerList.add(new Seller("Peter Li", "070-353632", "Sveavägen 88", "Nissan sold", "online"));
 	}
+	
+	ArrayList<String> soldCarsList = new ArrayList<String>();
+	
 
 }

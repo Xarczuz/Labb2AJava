@@ -1,14 +1,16 @@
 package app;
 
+import java.util.UUID;
+
 public class Cars {
-	String carUID, brand, name, modell, color, status;
-	int purchasePrice, sellPrice;
-	public Cars(String carUID, String brand, String name, String modell, String color, String status, int purchasePrice,
-			int sellPrice) {
+	String sellerID, carUID, brand, modell, color, status;
+	double purchasePrice, sellPrice;
+	
+	public Cars(String brand, String modell, String color, String status, double purchasePrice,
+			double sellPrice) {
 		
-		this.carUID = carUID;
+		this.carUID = UUID.randomUUID().toString();
 		this.brand = brand;
-		this.name = name;
 		this.modell = modell;
 		this.color = color;
 		this.status = status;
@@ -16,32 +18,42 @@ public class Cars {
 		this.sellPrice = sellPrice;
 	}
 	
-	@Override
-	public String toString() {
-		return "Cars [carUID=" + carUID + ", brand=" + brand + ", name=" + name + ", modell=" + modell + ", color="
-				+ color + ", status=" + status + ", purchasePrice=" + purchasePrice + ", sellPrice=" + sellPrice + "]";
-	}
+	
 	public String getBrand() {
 		return brand;
 	}
+
+
 	public String getCarUID() {
 		return carUID;
 	}
+
+
 	public String getColor() {
 		return color;
 	}
+
+
 	public String getModell() {
 		return modell;
 	}
-	public String getName() {
-		return name;
-	}
-	public int getPurchasePrice() {
+
+
+	public double getPurchasePrice() {
 		return purchasePrice;
 	}
-	public int getSellPrice() {
+
+
+	public String getSellerID() {
+		return sellerID;
+	}
+
+
+	public double getSellPrice() {
 		return sellPrice;
 	}
+
+
 	public String getStatus() {
 		return status;
 	}
@@ -54,20 +66,28 @@ public class Cars {
 	public void setColor(String color) {
 		this.color = color;
 	}
+	
 	public void setModell(String modell) {
 		this.modell = modell;
 	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public void setPurchasePrice(int purchasePrice) {
+	public void setPurchasePrice(double purchasePrice) {
 		this.purchasePrice = purchasePrice;
 	}
-	public void setSellPrice(int sellPrice) {
+	public void setSellerID(String sellerID) {
+		this.sellerID = sellerID;
+	}
+	public void setSellPrice(double sellPrice) {
 		this.sellPrice = sellPrice;
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+	
+	@Override
+	public String toString() {
+		return "Cars [sellerID=" + sellerID + ", carUID=" + carUID + ", brand=" + brand + ", modell=" + modell
+				+ ", color=" + color + ", status=" + status + ", purchasePrice=" + purchasePrice + ", sellPrice="
+				+ sellPrice + "]";
 	}
 	
 	
