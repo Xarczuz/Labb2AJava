@@ -8,7 +8,7 @@ public class Seller {
 	int sellerImportPurchase, sellerSoldPrice;
 	int sellerStoreAmount, sellerProfit, sellerSoldAmounnt;
 	float provision;
-	String sellerID = UUID.randomUUID().toString();
+	String sellerID;
 
 	/**
 	 * @param sellerName
@@ -25,21 +25,14 @@ public class Seller {
 	 * @param sellerID
 	 */
 	public Seller(String sellerName, String sellerPhone, String sellerAdress, String sellerInformation,
-			String sellerStatus, int sellerImportPurchase, int sellerSoldPrice, int sellerStoreAmount, int sellerProfit,
-			int sellerSoldAmounnt, float provision, String sellerID) {
-		super();
+			String sellerStatus) {
+		this.sellerID = UUID.randomUUID().toString();
 		this.sellerName = sellerName;
 		this.sellerPhone = sellerPhone;
 		this.sellerAdress = sellerAdress;
 		this.sellerInformation = sellerInformation;
 		this.sellerStatus = sellerStatus;
-		this.sellerImportPurchase = sellerImportPurchase;
-		this.sellerSoldPrice = sellerSoldPrice;
-		this.sellerStoreAmount = sellerStoreAmount;
-		this.sellerProfit = sellerProfit;
-		this.sellerSoldAmounnt = sellerSoldAmounnt;
-		this.provision = provision;
-		this.sellerID = sellerID;
+
 	}
 
 	/**
@@ -217,11 +210,11 @@ public class Seller {
 	 */
 	@Override
 	public String toString() {
-		return "Seller [sellerName=" + sellerName + ", sellerPhone=" + sellerPhone + ", sellerAdress=" + sellerAdress
+		return "sellerName=" + sellerName + ", sellerPhone=" + sellerPhone + ", sellerAdress=" + sellerAdress
 				+ ", sellerInformation=" + sellerInformation + ", sellerStatus=" + sellerStatus
 				+ ", sellerImportPurchase=" + sellerImportPurchase + ", sellerSoldPrice=" + sellerSoldPrice
 				+ ", sellerStoreAmount=" + sellerStoreAmount + ", sellerProfit=" + sellerProfit + ", sellerSoldAmounnt="
-				+ sellerSoldAmounnt + ", provision=" + provision + ", sellerID=" + sellerID + "]";
+				+ sellerSoldAmounnt + ", provision=" + provision + ", sellerID=" + sellerID;
 	}
 
 }
