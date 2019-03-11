@@ -15,24 +15,23 @@ public class Meny {
 
 		while (val != 9) {
 			System.out.println("\n======================================");
-			System.out.println("| Välj i menyn nedan.");
+			System.out.println("| VÃ¤lj i menyn nedan.");
 			System.out.println("======================================");
 			System.out.println("| 1. > Skapa rapport.");
 			System.out.println("| 2. > Skapa data.");
 			System.out.println("| 9. > Avsluta");
 			System.out.println("======================================");
-			System.out.print("| Välj från menyn: ");
+			System.out.print("| VÃ¤lj frÃ¥n menyn: ");
 			
 			val = in.nextInt();
 
 			if (val == 1) {
-				
+				CreateRapport.rapportMenu();
 			} else if (val == 2) {
-				
+				CreateData.createSeller(); 
 			} else if (val == 9) {
-			
-			} else {
-			}
+				System.exit(0);
+			} 
 		}
 	}
 

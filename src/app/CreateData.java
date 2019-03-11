@@ -1,10 +1,11 @@
 package app;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class CreateData {
 
-	public void createSeller() {
+	public static void createSeller() {
 
 		ArrayList<Cars> carsList = new ArrayList<Cars>();
 		// brand, modell, color, status purchasePrice, sellPrice Bilar i lager
@@ -51,12 +52,20 @@ public class CreateData {
 				Math.floor(Math.random() * sellerList.size());
 				sellerList.get((int) Math.floor(Math.random() * sellerList.size()));
 				c.setStatus("Såld");
-				String s = (c.carUID + ", " + sellerList.get((int) Math.floor(Math.random() * sellerList.size())).getSellerID());
+				String s = ("Car ID: "+c.carUID + ", " + "Seller ID: " + sellerList.get((int) Math.floor(Math.random() * sellerList.size())).getSellerID());
 				soldCarsList.add(s);
 			}
-			
-			System.out.println(Math.floor(Math.random() * 2));
 		}
+		
+		try {
+			IOData.writeToFile(soldCarsList, "soldCars.txt");
+			IOData.writeToFile(carsList, "carslist.txt");
+			IOData.writeToFile(sellerList, "sellerlist.txt");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	
 	}
 
 }
