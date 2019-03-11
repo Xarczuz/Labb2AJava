@@ -1,20 +1,20 @@
-Cars [sellerID=null, carUID=bd9c6657-3dac-45a3-b255-15ecb9167532, brand=Mazda, modell=CX-5, color=Röd, status=Såld, purchasePrice=78000.0, sellPrice=264900.0]
-Cars [sellerID=null, carUID=31ad6714-2355-4c3e-b0c2-719ee9194a87, brand=Mazda, modell=6, color=Blå, status=Såld, purchasePrice=67000.0, sellPrice=270900.0]
-Cars [sellerID=null, carUID=8c413235-b08f-4937-a0e2-46f0ea741a7b, brand=Mercedes, modell=CLA Coupé, color=Vit, status=Såld, purchasePrice=78000.0, sellPrice=264900.0]
-Cars [sellerID=null, carUID=8ada653d-14e8-4fc3-a382-fcc21fa1dc80, brand=Audi, modell=CX-5, color=Röd, status=Såld, purchasePrice=78000.0, sellPrice=264900.0]
-Cars [sellerID=null, carUID=34b22d78-5865-4cde-9a7a-2b5d0cb47601, brand=BMW, modell=CX-5, color=Röd, status=Såld, purchasePrice=78000.0, sellPrice=264900.0]
-Cars [sellerID=null, carUID=69c87a1b-3d67-493a-bb2f-c7b10158cb07, brand=Skoda, modell=CX-5, color=Röd, status=Finns i Lager, purchasePrice=78000.0, sellPrice=264900.0]
-Cars [sellerID=null, carUID=f21b900c-b636-4b38-bd0c-a82b1cdac0fb, brand=Tesla, modell=CX-5, color=Röd, status=Finns i Lager, purchasePrice=78000.0, sellPrice=264900.0]
-Cars [sellerID=null, carUID=1812a8ad-0fe5-4a7d-bff3-c4628224c327, brand=Volvo, modell=CX-5, color=Röd, status=Finns i Lager, purchasePrice=78000.0, sellPrice=264900.0]
-Cars [sellerID=null, carUID=30886152-a5ab-4e16-af3d-4dfc56cc9967, brand=Toyota, modell=CX-5, color=Röd, status=Såld, purchasePrice=78000.0, sellPrice=264900.0]
-Cars [sellerID=null, carUID=c0246f50-9a18-440a-803d-15e2c52cbbe4, brand=Opel, modell=CX-5, color=Röd, status=Såld, purchasePrice=78000.0, sellPrice=264900.0]
-Cars [sellerID=null, carUID=567c716a-6281-48a1-9583-bbdd51bb5567, brand=Honda, modell=CX-5, color=Röd, status=Finns i Lager, purchasePrice=78000.0, sellPrice=264900.0]
-Cars [sellerID=null, carUID=9503a8ff-8482-46a7-883f-7bbcd7e5cbea, brand=Fiat, modell=CX-5, color=Röd, status=Såld, purchasePrice=78000.0, sellPrice=264900.0]
-Cars [sellerID=null, carUID=fe2521e0-dfe0-48e6-8b04-5c44022ed4e6, brand=Renault, modell=CX-5, color=Röd, status=Finns i Lager, purchasePrice=78000.0, sellPrice=264900.0]
-Cars [sellerID=null, carUID=06473793-1875-44c3-8ec8-4c49cd3abbd9, brand=Aston Martin, modell=CX-5, color=Röd, status=Såld, purchasePrice=78000.0, sellPrice=264900.0]
-Cars [sellerID=null, carUID=b92c026e-4836-4e20-8f2a-d2cf75ed84a4, brand=Ferrari, modell=CX-5, color=Röd, status=Finns i Lager, purchasePrice=78000.0, sellPrice=264900.0]
-Cars [sellerID=null, carUID=8bd014a2-2628-43d5-82dd-75a79c786a42, brand=Lamborgini, modell=CX-5, color=Röd, status=Finns i Lager, purchasePrice=78000.0, sellPrice=264900.0]
-Cars [sellerID=null, carUID=0b8814ac-0f65-4132-a92d-85e0216efae6, brand=Rolls-Royce, modell=CX-5, color=Röd, status=Såld, purchasePrice=78000.0, sellPrice=264900.0]
-Cars [sellerID=null, carUID=da6046cb-04e6-4bb5-97db-091f675bc8b0, brand=Jaguar, modell=CX-5, color=Röd, status=Såld, purchasePrice=78000.0, sellPrice=264900.0]
-Cars [sellerID=null, carUID=ea57f6d1-bf25-4a11-98cf-f4bd64c422e1, brand=Ford, modell=CX-5, color=Röd, status=Finns i Lager, purchasePrice=78000.0, sellPrice=264900.0]
-Cars [sellerID=null, carUID=62166940-ae69-49c6-9223-7e1b8f520f77, brand=Chevrolet, modell=CX-5, color=Röd, status=Finns i Lager, purchasePrice=78000.0, sellPrice=264900.0]
+carUID=33069de2-9a72-4b51-8099-e00bc0de3100, brand=Mazda, modell=CX-5, color=Röd, status=Finns i Lager, purchasePrice=78000.0, sellPrice=264900.0
+carUID=fcdf4f1c-c298-4f27-a050-b8ea50505bea, brand=Mazda, modell=6, color=Blå, status=Såld, purchasePrice=67000.0, sellPrice=270900.0
+carUID=3c5ac0a3-069b-4f7e-93cd-1e9bb4aa0c3a, brand=Mercedes, modell=CLA Coupé, color=Vit, status=Såld, purchasePrice=78000.0, sellPrice=264900.0
+carUID=bb1d20e8-7931-4bab-ab07-d1f6ef12ebbb, brand=Audi, modell=CX-5, color=Röd, status=Såld, purchasePrice=78000.0, sellPrice=264900.0
+carUID=b050d119-5a3b-4da9-af28-1a40bc3dd36e, brand=BMW, modell=CX-5, color=Röd, status=Finns i Lager, purchasePrice=78000.0, sellPrice=264900.0
+carUID=b7e339e3-eabe-47ab-8405-820310db5885, brand=Skoda, modell=CX-5, color=Röd, status=Såld, purchasePrice=78000.0, sellPrice=264900.0
+carUID=3175bd56-4158-4bbb-a732-d4628d183e2f, brand=Tesla, modell=CX-5, color=Röd, status=Finns i Lager, purchasePrice=78000.0, sellPrice=264900.0
+carUID=431b7060-4f01-49da-8a9a-78f941d826d5, brand=Volvo, modell=CX-5, color=Röd, status=Såld, purchasePrice=78000.0, sellPrice=264900.0
+carUID=8a9d3af6-5691-4f94-a7e9-dab7c955e38a, brand=Toyota, modell=CX-5, color=Röd, status=Finns i Lager, purchasePrice=78000.0, sellPrice=264900.0
+carUID=771223fc-ffbf-4849-86c3-52265fcfd4ef, brand=Opel, modell=CX-5, color=Röd, status=Finns i Lager, purchasePrice=78000.0, sellPrice=264900.0
+carUID=d22b1c83-f81f-4a06-a0d9-a30012650f42, brand=Honda, modell=CX-5, color=Röd, status=Finns i Lager, purchasePrice=78000.0, sellPrice=264900.0
+carUID=ed576e85-5c75-4453-a582-08af867eec23, brand=Fiat, modell=CX-5, color=Röd, status=Finns i Lager, purchasePrice=78000.0, sellPrice=264900.0
+carUID=3b426ad8-3e87-46f9-b3ad-2a96c884b6bf, brand=Renault, modell=CX-5, color=Röd, status=Finns i Lager, purchasePrice=78000.0, sellPrice=264900.0
+carUID=7abbc3cd-dbb6-4d57-80ea-444d1ad6ecc8, brand=Aston Martin, modell=CX-5, color=Röd, status=Finns i Lager, purchasePrice=78000.0, sellPrice=264900.0
+carUID=2db5ec0a-0816-4c45-87d9-ffdce4238737, brand=Ferrari, modell=CX-5, color=Röd, status=Finns i Lager, purchasePrice=78000.0, sellPrice=264900.0
+carUID=bf91a9f6-2a89-42b1-8801-e3cdbfd4538b, brand=Lamborgini, modell=CX-5, color=Röd, status=Finns i Lager, purchasePrice=78000.0, sellPrice=264900.0
+carUID=7a4fabfc-d980-4997-8ca0-32335b9652b0, brand=Rolls-Royce, modell=CX-5, color=Röd, status=Såld, purchasePrice=78000.0, sellPrice=264900.0
+carUID=68268104-ba4c-4926-85e6-409005685c51, brand=Jaguar, modell=CX-5, color=Röd, status=Finns i Lager, purchasePrice=78000.0, sellPrice=264900.0
+carUID=613747c2-4f58-4df4-beba-105032b4e8fc, brand=Ford, modell=CX-5, color=Röd, status=Finns i Lager, purchasePrice=78000.0, sellPrice=264900.0
+carUID=2b347ebe-6dcf-4f79-92a8-d88d911d8868, brand=Chevrolet, modell=CX-5, color=Röd, status=Finns i Lager, purchasePrice=78000.0, sellPrice=264900.0

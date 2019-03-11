@@ -203,18 +203,18 @@ public class Seller {
 		this.sellerStoreAmount = sellerStoreAmount;
 	}
 
+	@Override
+	public String toString() {
+		return "sellerName=" + sellerName + ", sellerPhone=" + sellerPhone + ", sellerAdress=" + sellerAdress
+				+ ", sellerInformation=" + sellerInformation + ", sellerStatus=" + sellerStatus + ", sellerID="
+				+ sellerID + "";
+	}
+
 	/*
 	 * (non-Javadoc)
 	 * 
 	 * @see java.lang.Object#toString()
 	 */
-	@Override
-	public String toString() {
-		return "sellerName=" + sellerName + ", sellerPhone=" + sellerPhone + ", sellerAdress=" + sellerAdress
-				+ ", sellerInformation=" + sellerInformation + ", sellerStatus=" + sellerStatus
-				+ ", sellerImportPurchase=" + sellerImportPurchase + ", sellerSoldPrice=" + sellerSoldPrice
-				+ ", sellerStoreAmount=" + sellerStoreAmount + ", sellerProfit=" + sellerProfit + ", sellerSoldAmounnt="
-				+ sellerSoldAmounnt + ", provision=" + provision + ", sellerID=" + sellerID;
-	}
+	
 
 }

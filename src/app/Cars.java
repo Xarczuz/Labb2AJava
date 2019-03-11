@@ -3,7 +3,7 @@ package app;
 import java.util.UUID;
 
 public class Cars {
-	String sellerID, carUID, brand, modell, color, status;
+	String carUID, brand, modell, color, status;
 	double purchasePrice, sellPrice;
 	
 	public Cars(String brand, String modell, String color, String status, double purchasePrice,
@@ -43,12 +43,6 @@ public class Cars {
 		return purchasePrice;
 	}
 
-
-	public String getSellerID() {
-		return sellerID;
-	}
-
-
 	public double getSellPrice() {
 		return sellPrice;
 	}
@@ -73,9 +67,7 @@ public class Cars {
 	public void setPurchasePrice(double purchasePrice) {
 		this.purchasePrice = purchasePrice;
 	}
-	public void setSellerID(String sellerID) {
-		this.sellerID = sellerID;
-	}
+	
 	public void setSellPrice(double sellPrice) {
 		this.sellPrice = sellPrice;
 	}
@@ -85,9 +77,9 @@ public class Cars {
 	
 	@Override
 	public String toString() {
-		return "Cars [sellerID=" + sellerID + ", carUID=" + carUID + ", brand=" + brand + ", modell=" + modell
+		return "carUID=" + carUID + ", brand=" + brand + ", modell=" + modell
 				+ ", color=" + color + ", status=" + status + ", purchasePrice=" + purchasePrice + ", sellPrice="
-				+ sellPrice + "]";
+				+ sellPrice;
 	}
 	
 	
