@@ -60,7 +60,7 @@ public class CreateRapport {
 		String[] tmpStr = inData.split("\n");
 		for (String s : tmpStr) {
 			String[] tmpStrArr = s.split(",");
-			soldCarsList.put(tmpStrArr[0].split(":")[1], tmpStrArr[1].split(":")[1]);
+			soldCarsList.put(tmpStrArr[0].split(":")[1].trim(), tmpStrArr[1].split(":")[1].trim());
 		}
 	}
 
@@ -75,8 +75,8 @@ public class CreateRapport {
 			String sellerStatus = tmpStrArr[4].split("=")[1];
 
 			Seller tmpSeller = new Seller(sellerName, sellerPhone, sellerAdress, sellerInformation, sellerStatus);
-			tmpSeller.setSellerID(tmpStrArr[5].split("=")[1]);
-			sellerList.add(new Seller(sellerName, sellerPhone, sellerAdress, sellerInformation, sellerStatus));
+			tmpSeller.setSellerID(tmpStrArr[5].split("=")[1].trim());
+			sellerList.add(tmpSeller);
 		}
 
 		for (Seller string : sellerList) {
@@ -91,7 +91,7 @@ public class CreateRapport {
 		for (String s : tmpStr) {
 			String[] tmpStrArr = s.split(",");
 
-			String brand = tmpStrArr[0].split("=")[1];
+			String brand = tmpStrArr[1].split("=")[1];
 			String modell = tmpStrArr[2].split("=")[1];
 			String color = tmpStrArr[3].split("=")[1];
 			String status = tmpStrArr[4].split("=")[1];
@@ -99,7 +99,7 @@ public class CreateRapport {
 			double sellPrice = Double.parseDouble(tmpStrArr[6].split("=")[1]);
 
 			Cars tmpCar = new Cars(brand, modell, color, status, purchasePrice, sellPrice);
-			tmpCar.setCarUID(tmpStrArr[1].split("=")[1]);
+			tmpCar.setCarUID(tmpStrArr[0].split("=")[1].trim());
 			carsList.add(tmpCar);
 		}
 
@@ -130,7 +130,8 @@ public class CreateRapport {
 		for (String text : soldCarsList.keySet()) {
 
 			sellerList.forEach((Seller a) -> {
-				if (a.getSellerID().contentEquals(soldCarsList.get(text))) {
+				
+				if (a.getSellerID().equals(soldCarsList.get(text))) {
 					double purchase = 0;
 					double sold = 0;
 					double profit = 0;
