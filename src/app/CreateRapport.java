@@ -125,4 +125,8 @@ public class CreateRapport {
 		System.out.println("Företagets vinst! " + profit + "kr");
 	}
 
+	public static void printCarsSoldBySeller() {
+
+	}
+
 }
