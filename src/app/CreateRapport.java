@@ -11,6 +11,7 @@ public class CreateRapport {
 	static ArrayList<Seller> sellerList = new ArrayList<Seller>();
 	static ArrayList<Cars> carsList = new ArrayList<Cars>();
 	static HashMap<String, String> soldCarsList = new HashMap<String, String>();
+	private static boolean run =true;
 
 	public static void rapportMenu() {
 		in = new Scanner(System.in);
@@ -127,10 +128,11 @@ public class CreateRapport {
 	}
 
 	public static void printCarsSoldBySeller() {
-		for (String text : soldCarsList.keySet()) {
 
+		if(run) {
+			run=false;
+		for (String text : soldCarsList.keySet()) {
 			sellerList.forEach((Seller a) -> {
-				
 				if (a.getSellerID().equals(soldCarsList.get(text))) {
 					double purchase = 0;
 					double sold = 0;
@@ -145,13 +147,11 @@ public class CreateRapport {
 							a.setProvision(provision + a.getProvision());
 							a.setSellerProfit(profit + a.getSellerProfit());
 							a.setSellerSoldAmounnt(a.getSellerSoldAmounnt() + 1);
-
 						}
 					}
-
 				}
 			});
-
+		}
 		}
 		sellerList.forEach(
 				(Seller s) -> System.out.println("Namn: " + s.getSellerName() + " Vinst: " + s.getSellerProfit()
