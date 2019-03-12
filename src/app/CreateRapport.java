@@ -52,7 +52,6 @@ public class CreateRapport {
 			s = IOData.readFromFile("carslist.txt");
 			carsListToArr(s);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
