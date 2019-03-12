@@ -5,9 +5,9 @@ import java.util.UUID;
 public class Seller {
 
 	private String sellerName, sellerPhone, sellerAdress, sellerInformation, sellerStatus;
-	private int sellerImportPurchase, sellerSoldPrice;
-	private int sellerStoreAmount, sellerProfit, sellerSoldAmounnt;
-	private float provision;
+	private double sellerImportPurchase, sellerSoldPrice;
+	private double sellerStoreAmount, sellerProfit, sellerSoldAmounnt;
+	private double provision;
 	private String sellerID;
 
 	/**
@@ -38,7 +38,7 @@ public class Seller {
 	/**
 	 * @return the provision
 	 */
-	public float getProvision() {
+	public double getProvision() {
 		return provision;
 	}
 
@@ -59,7 +59,7 @@ public class Seller {
 	/**
 	 * @return the sellerImportPurchase
 	 */
-	public int getSellerImportPurchase() {
+	public double getSellerImportPurchase() {
 		return sellerImportPurchase;
 	}
 
@@ -87,21 +87,21 @@ public class Seller {
 	/**
 	 * @return the sellerProfit
 	 */
-	public int getSellerProfit() {
+	public double getSellerProfit() {
 		return sellerProfit;
 	}
 
 	/**
 	 * @return the sellerSoldAmounnt
 	 */
-	public int getSellerSoldAmounnt() {
+	public double getSellerSoldAmounnt() {
 		return sellerSoldAmounnt;
 	}
 
 	/**
 	 * @return the sellerSoldPrice
 	 */
-	public int getSellerSoldPrice() {
+	public double getSellerSoldPrice() {
 		return sellerSoldPrice;
 	}
 
@@ -115,14 +115,14 @@ public class Seller {
 	/**
 	 * @return the sellerStoreAmount
 	 */
-	public int getSellerStoreAmount() {
+	public double getSellerStoreAmount() {
 		return sellerStoreAmount;
 	}
 
 	/**
 	 * @param provision the provision to set
 	 */
-	public void setProvision(float provision) {
+	public void setProvision(double provision) {
 		this.provision = provision;
 	}
 
@@ -143,7 +143,7 @@ public class Seller {
 	/**
 	 * @param sellerImportPurchase the sellerImportPurchase to set
 	 */
-	public void setSellerImportPurchase(int sellerImportPurchase) {
+	public void setSellerImportPurchase(double sellerImportPurchase) {
 		this.sellerImportPurchase = sellerImportPurchase;
 	}
 
@@ -171,21 +171,21 @@ public class Seller {
 	/**
 	 * @param sellerProfit the sellerProfit to set
 	 */
-	public void setSellerProfit(int sellerProfit) {
+	public void setSellerProfit(double sellerProfit) {
 		this.sellerProfit = sellerProfit;
 	}
 
 	/**
 	 * @param sellerSoldAmounnt the sellerSoldAmounnt to set
 	 */
-	public void setSellerSoldAmounnt(int sellerSoldAmounnt) {
+	public void setSellerSoldAmounnt(double sellerSoldAmounnt) {
 		this.sellerSoldAmounnt = sellerSoldAmounnt;
 	}
 
 	/**
 	 * @param sellerSoldPrice the sellerSoldPrice to set
 	 */
-	public void setSellerSoldPrice(int sellerSoldPrice) {
+	public void setSellerSoldPrice(double sellerSoldPrice) {
 		this.sellerSoldPrice = sellerSoldPrice;
 	}
 
@@ -199,7 +199,7 @@ public class Seller {
 	/**
 	 * @param sellerStoreAmount the sellerStoreAmount to set
 	 */
-	public void setSellerStoreAmount(int sellerStoreAmount) {
+	public void setSellerStoreAmount(double sellerStoreAmount) {
 		this.sellerStoreAmount = sellerStoreAmount;
 	}
 

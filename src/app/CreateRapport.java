@@ -20,7 +20,7 @@ public class CreateRapport {
 			System.out.println("| Skapa rapport.");
 			System.out.println("======================================");
 			System.out.println("| 1. > Sålda bilar.");
-			System.out.println("| 2. > Skapa data.");
+			System.out.println("| 2. > Hur många bilar som varje säljare har sålt.");
 			System.out.println("| 3. > Skapa data.");
 			System.out.println("| 9. > Gå till huvud meny.");
 			System.out.println("======================================");
@@ -33,6 +33,7 @@ public class CreateRapport {
 				printSoldCars();
 
 			} else if (val == 2) {
+				printCarsSoldBySeller();
 
 			} else if (val == 9) {
 				return;
@@ -126,7 +127,34 @@ public class CreateRapport {
 	}
 
 	public static void printCarsSoldBySeller() {
+		for (String text : soldCarsList.keySet()) {
 
+			sellerList.forEach((Seller a) -> {
+				if (a.getSellerID().contentEquals(soldCarsList.get(text))) {
+					double purchase = 0;
+					double sold = 0;
+					double profit = 0;
+					double provision = 0;
+					for (Cars string : carsList) {
+						if (string.getCarUID().contentEquals(text)) {
+							purchase = string.getPurchasePrice();
+							sold = string.getSellPrice();
+							profit = sold - purchase;
+							provision = profit * 0.1;
+							a.setProvision(provision + a.getProvision());
+							a.setSellerProfit(profit + a.getSellerProfit());
+							a.setSellerSoldAmounnt(a.getSellerSoldAmounnt() + 1);
+
+						}
+					}
+
+				}
+			});
+
+		}
+		sellerList.forEach(
+				(Seller s) -> System.out.println("Namn: " + s.getSellerName() + " Vinst: " + s.getSellerProfit()
+						+ " Provision: " + s.getProvision() + " Antal_Sålda: " + s.getSellerSoldAmounnt()));
 	}
 
 }
