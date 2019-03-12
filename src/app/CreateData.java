@@ -46,17 +46,18 @@ public class CreateData {
 		// koppla säljare till såld bil
 
 		for (Cars c : carsList) {
-			//Math.floor(Math.random() * 2);
-			
-			if(Math.floor(Math.random() * 2) == 1) {
+			// Math.floor(Math.random() * 2);
+
+			if (Math.floor(Math.random() * 2) == 1) {
 				Math.floor(Math.random() * sellerList.size());
 				sellerList.get((int) Math.floor(Math.random() * sellerList.size()));
 				c.setStatus("Såld");
-				String s = ("Car ID: "+c.carUID + ", " + "Seller ID: " + sellerList.get((int) Math.floor(Math.random() * sellerList.size())).getSellerID());
+				String s = ("Car ID: " + c.getCarUID() + ", " + "Seller ID: "
+						+ sellerList.get((int) Math.floor(Math.random() * sellerList.size())).getSellerID());
 				soldCarsList.add(s);
 			}
 		}
-		
+
 		try {
 			IOData.writeToFile(soldCarsList, "soldCars.txt");
 			IOData.writeToFile(carsList, "carslist.txt");

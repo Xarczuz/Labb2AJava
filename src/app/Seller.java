@@ -4,11 +4,11 @@ import java.util.UUID;
 
 public class Seller {
 
-	String sellerName, sellerPhone, sellerAdress, sellerInformation, sellerStatus;
-	int sellerImportPurchase, sellerSoldPrice;
-	int sellerStoreAmount, sellerProfit, sellerSoldAmounnt;
-	float provision;
-	String sellerID;
+	private String sellerName, sellerPhone, sellerAdress, sellerInformation, sellerStatus;
+	private int sellerImportPurchase, sellerSoldPrice;
+	private int sellerStoreAmount, sellerProfit, sellerSoldAmounnt;
+	private float provision;
+	private String sellerID;
 
 	/**
 	 * @param sellerName
@@ -215,6 +215,5 @@ public class Seller {
 	 * 
 	 * @see java.lang.Object#toString()
 	 */
-	
 
 }

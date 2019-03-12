@@ -30,6 +30,7 @@ public class CreateRapport {
 
 			if (val == 1) {
 				System.out.println("\nSålda Bilar\n");
+				printSoldCars();
 
 			} else if (val == 2) {
 
@@ -62,7 +63,6 @@ public class CreateRapport {
 		}
 	}
 
-	
 	public static void sellerListToArr(String inData) {
 		String[] tmpStr = inData.split("\n");
 		for (String s : tmpStr) {
@@ -72,10 +72,9 @@ public class CreateRapport {
 			String sellerAdress = tmpStrArr[2].split("=")[1];
 			String sellerInformation = tmpStrArr[3].split("=")[1];
 			String sellerStatus = tmpStrArr[4].split("=")[1];
-			
-					
+
 			Seller tmpSeller = new Seller(sellerName, sellerPhone, sellerAdress, sellerInformation, sellerStatus);
-			tmpSeller.setSellerID( tmpStrArr[5].split("=")[1]); 
+			tmpSeller.setSellerID(tmpStrArr[5].split("=")[1]);
 			sellerList.add(new Seller(sellerName, sellerPhone, sellerAdress, sellerInformation, sellerStatus));
 		}
 
@@ -86,27 +85,44 @@ public class CreateRapport {
 	}
 
 	public static void carsListToArr(String inData) {
-		
+
 		String[] tmpStr = inData.split("\n");
 		for (String s : tmpStr) {
 			String[] tmpStrArr = s.split(",");
-			
+
 			String brand = tmpStrArr[0].split("=")[1];
 			String modell = tmpStrArr[2].split("=")[1];
 			String color = tmpStrArr[3].split("=")[1];
 			String status = tmpStrArr[4].split("=")[1];
 			double purchasePrice = Double.parseDouble(tmpStrArr[5].split("=")[1]);
 			double sellPrice = Double.parseDouble(tmpStrArr[6].split("=")[1]);
-			
+
 			Cars tmpCar = new Cars(brand, modell, color, status, purchasePrice, sellPrice);
 			tmpCar.setCarUID(tmpStrArr[1].split("=")[1]);
 			carsList.add(tmpCar);
 		}
-		
+
 		for (Cars string : carsList) {
 
 			System.out.println(string.toString());
 		}
+	}
+
+	public static void printSoldCars() {
+		int purchase = 0;
+		int sold = 0;
+
+		for (Cars string : carsList) {
+			if (string.getStatus().toLowerCase().contentEquals("såld")) {
+
+				System.out.println(string.toString());
+			}
+			purchase += string.getPurchasePrice();
+			sold += string.getSellPrice();
+		}
+
+		int profit = sold - purchase;
+		System.out.println("Företagets vinst! " + profit + "kr");
 	}
 
 }
