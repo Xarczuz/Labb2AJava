@@ -1,10 +1,31 @@
 package app;
 
 import java.io.IOException;
+import java.nio.file.Paths;
+import java.sql.Connection;
+import java.sql.DatabaseMetaData;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class CreateData {
-
+    public static void createNewDatabase(String fileName) {
+    	String url = "jdbc:sqlite:" +
+    			Paths.get(".").toAbsolutePath().normalize().toString()+"/"+ fileName;
+    	System.out.println(url);
+    	try (Connection conn = DriverManager.getConnection(url)) {
+            if (conn != null) {
+                DatabaseMetaData meta = conn.getMetaData();
+                System.out.println("The driver name is " + meta.getDriverName());
+                System.out.println("A new database has been created.");
+            }
+ 
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+    	
+    }
+    
 	public static void createSeller() {
 
 		ArrayList<Cars> carsList = new ArrayList<Cars>();

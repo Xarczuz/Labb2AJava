@@ -28,7 +28,8 @@ public class Meny {
 			if (val == 1) {
 				CreateRapport.rapportMenu();
 			} else if (val == 2) {
-				CreateData.createSeller(); 
+				//CreateData.createSeller(); 
+				CreateData.createNewDatabase("TheDataBase.db");
 			} else if (val == 9) {
 				System.exit(0);
 			} 
