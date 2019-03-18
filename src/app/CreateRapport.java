@@ -79,10 +79,7 @@ public class CreateRapport {
 			sellerList.add(tmpSeller);
 		}
 
-		for (Seller string : sellerList) {
 
-			System.out.println(string.toString());
-		}
 	}
 
 	public static void carsListToArr(String inData) {
@@ -103,10 +100,7 @@ public class CreateRapport {
 			carsList.add(tmpCar);
 		}
 
-		for (Cars string : carsList) {
 
-			System.out.println(string.toString());
-		}
 	}
 
 	public static void printSoldCars() {

@@ -5,27 +5,109 @@ import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 
 public class CreateData {
-    public static void createNewDatabase(String fileName) {
-    	String url = "jdbc:sqlite:" +
-    			Paths.get(".").toAbsolutePath().normalize().toString()+"/"+ fileName;
-    	System.out.println(url);
-    	try (Connection conn = DriverManager.getConnection(url)) {
-            if (conn != null) {
-                DatabaseMetaData meta = conn.getMetaData();
-                System.out.println("The driver name is " + meta.getDriverName());
-                System.out.println("A new database has been created.");
-            }
- 
+    private static Connection connect(String fileName) {
+        // SQLite connection string
+    	String url = "jdbc:sqlite:" + Paths.get(".").toAbsolutePath().normalize().toString() + "/" + fileName;
+    	Connection conn = null;
+        try {
+            conn = DriverManager.getConnection(url);
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
-    	
+        return conn;
     }
-    
+	  public static void insert(String LastName,String FirstName,String Address , String Phone)  {
+	        String sql = "INSERT INTO Personal(LastName,FirstName,Address,Phone) VALUES(?,?,?,?)";
+	 
+	        try (Connection conn = CreateData.connect("TheDataBase.db");
+	                PreparedStatement pstmt = conn.prepareStatement(sql)) {
+	            pstmt.setString(1, LastName);
+	            pstmt.setString(2, FirstName);
+	            pstmt.setString(3, Address);
+	            pstmt.setString(4, Phone);
+	            
+	            pstmt.executeUpdate();
+	        } catch (SQLException e) {
+	            System.out.println(e.getMessage());
+	        }
+	    }
+	public static void selectAll(String fileName){
+        String sql = "SELECT * FROM Personal";
+    	String url = "jdbc:sqlite:" + Paths.get(".").toAbsolutePath().normalize().toString() + "/" + fileName;
+        try (Connection conn = DriverManager.getConnection(url);
+        		  Statement stmt  = conn.createStatement();
+                ResultSet rs    = stmt.executeQuery(sql)){
+        	  while (rs.next()) {
+                  System.out.println(rs.getInt("PersonID") +  "\t" + 
+                                     rs.getString("FirstName") + "\t" +
+                                     rs.getString("LastName") + "\t" +
+                                     rs.getString("Address") + "\t" +
+                                     rs.getString("Phone")                          
+                		  );
+              }          
+	 
+} catch (SQLException e) {
+    System.out.println(e.getMessage());
+}
+	}
+	public static void createNewTable(String fileName) {
+		  // SQLite connection string
+		String url = "jdbc:sqlite:" + Paths.get(".").toAbsolutePath().normalize().toString() + "/" + fileName;
+        // SQL statement for creating a new table
+
+        try (Connection conn = DriverManager.getConnection(url);
+                Statement stmt = conn.createStatement()) {
+        	System.out.println("Connected");
+            // create a new table
+            String sql = "CREATE TABLE IF NOT EXISTS Personal (\n" + 
+            		"    PersonID integer PRIMARY KEY,\n" + 
+            		"    LastName text,\n" + 
+            		"    FirstName text,\n" + 
+            		"    Address text,\n" + 
+            		"    Phone text"+
+            		");";
+
+            stmt.execute(sql);
+            
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+	}
+
+	public static void createNewDatabase(String fileName) {
+		String url = "jdbc:sqlite:" + Paths.get(".").toAbsolutePath().normalize().toString() + "/" + fileName;
+		System.out.println(url);
+		Connection conn = null;
+		try {
+			conn = DriverManager.getConnection(url);
+			if (conn != null) {
+				DatabaseMetaData meta = conn.getMetaData();
+
+				System.out.println("The driver name is " + meta.getDriverName());
+				System.out.println("A new database has been created.");
+			}
+
+		} catch (SQLException e) {
+			System.out.println(e.getMessage());
+		} finally {
+			try {
+				if (conn != null) {
+					conn.close();
+				}
+			} catch (SQLException ex) {
+				System.out.println(ex.getMessage());
+			}
+		}
+
+	}
+
 	public static void createSeller() {
 
 		ArrayList<Cars> carsList = new ArrayList<Cars>();
